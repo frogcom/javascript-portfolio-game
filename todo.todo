@@ -1,0 +1,48 @@
+javascript portofolio game. web page
+
+- start screen with information of this project and the website
+- removing al pokemon aspects
+    -delete evrything whats not needed
+        -battles 
+        -sounds
+        -arreas 
+        - obstacles 
+map:
+    -searching for new assets images and sounds 
+    - remake map 
+        -more houses for projects
+        -eatch project an house 
+        -nps to explane the project 
+        -new nps with an sise of 12 by 12 px and not to detailed 
+    -implementing new assets 
+    -making game full screen
+
+game mecanics:
+    -walking speed fixen 
+    -adding framerate/ gameloop
+    - npc collition and text pop up for project information
+    -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- de boot kunnen gebruiken om naar andere locations te gaan
+    - locatie voor collition al toegevoegt
+
+- npcs
+    - npcs toevoeggen // done
+    - praaten tegen npcs 
+    - tasks voor npcs 
+
+- css optimizen en verbeteren en uit html halen // bezig
+

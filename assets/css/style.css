@@ -21,7 +21,7 @@ button {
 button:hover {
   background-color: #ddd;
 }
-.textdiv {
+#textdiv {
   z-index: 4;
   display: flex;
   background-color: #ddd;
@@ -30,5 +30,5 @@ button:hover {
   left: 32%;
   width: 20em;
   height: max-content;
-  display: none;
+  font-family: "Press Start 2P";
 }

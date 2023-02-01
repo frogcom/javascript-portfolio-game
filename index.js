@@ -18,10 +18,10 @@ const charactersMap = [];
 for (let i = 0; i < charactersMapData.length; i += 70) {
   charactersMap.push(charactersMapData.slice(i, 70 + i));
 }
-// const travelZones = [];
-// for (let i = 0; i < travelZonesData.length; i += 70) {
-//   travelZones.push(travelZonesData.slice(i, 70 + i));
-// }
+const projectZones = [];
+for (let i = 0; i < projectZonesData.length; i += 70) {
+  projectZones.push(projectZonesData.slice(i, 70 + i));
+}
 const boundaries = [];
 const offset = {
   x: -285,
@@ -41,13 +41,29 @@ collisionsMap.forEach((row, i) => {
       );
   });
 });
+projectZonesData.forEach((row, i) => {
+  if (Array.isArray(row)) {
+    row.forEach((symbol, j) => {
+      if (symbol === 1025) {
+        projectZones.push(
+          new Boundary({
+            position: {
+              x: j * Boundary.width + offset.x,
+              y: i * Boundary.height + offset.y,
+            },
+          })
+        );
+      }
+    });
+  } else {
+    // Handle non-array value of row
+  }
+});
 
-// const battleZones = [];
-
-// battleZonesMap.forEach((row, i) => {
+// projectZonesData.forEach((row, i) => {
 //   row.forEach((symbol, j) => {
 //     if (symbol === 1025)
-//       battleZones.push(
+//       projectZones.push(
 //         new Boundary({
 //           position: {
 //             x: j * Boundary.width + offset.x,
@@ -225,9 +241,11 @@ function animate() {
 
   let moving = true;
   player.animate = false;
+  const textDiv = document.getElementById("textdiv");
 
-  // if (battle.initiated) return;
-
+  if (textDiv.style.display === "block") {
+    return;
+  }
   // activate a battle
 
   if (keys.w.pressed && lastKey === "w") {
@@ -338,7 +356,6 @@ function animate() {
       player,
       characterOffset: { x: -3, y: 0 },
     });
-
     for (let i = 0; i < boundaries.length; i++) {
       const boundary = boundaries[i];
       if (

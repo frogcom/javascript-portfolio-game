@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +16,11 @@
 </head>
 
 <body>
-    <div style="display: inline-block; position: relative; ">
-        <div class="textdiv">
+    <div style="display: inline-block; position: relative; width: 100vw; height: 100vh;">
+        <div id="textdiv" style="display: none;">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nobis quidem reiciendis a ab odit
-                facilis labore qui iste aspernatur.</p>
+                facilis labore qui iste aspernatur lorem</p>
+            <button onclick="closePopUp()">close</button>
         </div>
         <canvas></canvas>
     </div>
@@ -29,9 +34,12 @@
     <script src="assets/data/audio.js"></script>
 
     <script src="assets/data/collisions.js"></script>
-
+    <script src="assets/data/projectZones.js"></script>
     <script src="assets/data/characters.js"></script>
     <script src="assets/js/utils.js"></script>
+
     <script src="classes.js"></script>
     <script src="index.js"></script>
 </body>
+
+</html>

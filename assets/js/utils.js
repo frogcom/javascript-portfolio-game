@@ -10,6 +10,7 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
 function checkForCharacterCollision({
   characters,
   player,
+  moving,
   characterOffset = { x: 0, y: 0 },
 }) {
   // monitor for character collision
@@ -28,7 +29,10 @@ function checkForCharacterCollision({
         },
       })
     ) {
-      console.log("go");
+      document.getElementById("textdiv").style.display = "block";
     }
   }
+}
+function closePopUp() {
+  document.getElementById("textdiv").style.display = "none";
 }

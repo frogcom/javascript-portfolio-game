@@ -10,34 +10,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
+    <link rel="icon" type="image/x-icon" href="assets/img/dimond.png">
 
-    </style>
 </head>
 
 <body>
-    <div style="display: inline-block; position: relative; width: 100vw; height: 100vh;">
+    <div class="container" style="display: flex; position: relative; width: 100vw; height: 100vh;">
+        <div id="startgame" onclick="startGame()" style="display: flex;">
+            <p>welcome to my portfolio</p><br>
+            <p>click here to start the game</p>
+
+        </div>
         <div id="textdiv" style="display: none;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nobis quidem reiciendis a ab odit
-                facilis labore qui iste aspernatur lorem</p>
+            <h1 id="dialogetitle"></h1>
+            <p id="textdivtext"></p>
+            <button id="nextdetails">next</button>
             <button onclick="closePopUp()">close</button>
         </div>
         <canvas></canvas>
     </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
         integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
         integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="json.js"></script>
+    <script src="assets/js/functions.js"></script>
     <script src="assets/data/audio.js"></script>
-
     <script src="assets/data/collisions.js"></script>
     <script src="assets/data/projectZones.js"></script>
     <script src="assets/data/characters.js"></script>
     <script src="assets/js/utils.js"></script>
-
     <script src="classes.js"></script>
     <script src="index.js"></script>
 </body>

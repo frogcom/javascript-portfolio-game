@@ -1,0 +1,58 @@
+{
+  "projects": {
+    "first": {
+      "title": "about me",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "4": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "5": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "second": {
+      "title": "about me",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "4": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "5": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "tirth": {
+      "title": "about me",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "4": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "5": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

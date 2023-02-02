@@ -1,5 +1,6 @@
 class Sprite {
   constructor({
+    uid,
     position,
     image,
     frames = { max: 1, hold: 10 },
@@ -8,6 +9,7 @@ class Sprite {
     rotation = 0,
     scale = 1,
   }) {
+    this.uid = uid;
     this.position = position;
     this.image = new Image();
     this.frames = { ...frames, val: 0, elapsed: 0 };

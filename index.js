@@ -23,6 +23,7 @@ for (let i = 0; i < projectZonesData.length; i += 70) {
   projectZones.push(projectZonesData.slice(i, 70 + i));
 }
 const boundaries = [];
+const projects = [];
 const offset = {
   x: -285,
   y: -450,
@@ -41,6 +42,7 @@ collisionsMap.forEach((row, i) => {
       );
   });
 });
+
 projectZonesData.forEach((row, i) => {
   if (Array.isArray(row)) {
     row.forEach((symbol, j) => {
@@ -60,34 +62,6 @@ projectZonesData.forEach((row, i) => {
   }
 });
 
-// projectZonesData.forEach((row, i) => {
-//   row.forEach((symbol, j) => {
-//     if (symbol === 1025)
-//       projectZones.push(
-//         new Boundary({
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//         })
-//       );
-//   });
-// });
-
-// travelZones.forEach((row, i) => {
-//   row.forEach((symbol, j) => {
-//     if (symbol === 1025)
-//       battleZones.push(
-//         new Boundary({
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//         })
-//       );
-//   });
-// });
-
 const characters = [];
 const villagerImg = new Image();
 villagerImg.src = "./assets/img/villager/Idle.png";
@@ -101,6 +75,7 @@ charactersMap.forEach((row, i) => {
     if (symbol === 1026) {
       characters.push(
         new Sprite({
+          uid: 1,
           position: {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y,
@@ -111,7 +86,10 @@ charactersMap.forEach((row, i) => {
             hold: 60,
           },
           scale: 3,
-          animate: true,
+          dialoge: {
+            dialoge1: "hakdsfkjhkasldfa",
+            dialoge2: "ladsfjalskfdjsldjflsajfdladfladsjkflsajdflafdj",
+          },
         })
       );
     }
@@ -119,6 +97,7 @@ charactersMap.forEach((row, i) => {
     else if (symbol === 1031) {
       characters.push(
         new Sprite({
+          uid: 2,
           position: {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y,
@@ -145,7 +124,6 @@ charactersMap.forEach((row, i) => {
     }
   });
 });
-
 const image = new Image();
 image.src = "./assets/img/Pellet Town.png";
 
@@ -213,25 +191,14 @@ const keys = {
   },
 };
 
-const movables = [
-  background,
-  ...boundaries,
-  foreground,
-  // ...battleZones,
-  ...characters,
-];
+const movables = [background, ...boundaries, foreground, ...characters];
 const renderables = [
   background,
   ...boundaries,
-  // ...battleZones,
   ...characters,
   player,
   foreground,
 ];
-
-// const battle = {
-//   initiated: false,
-// };
 
 function animate() {
   const animationId = window.requestAnimationFrame(animate);
@@ -242,8 +209,11 @@ function animate() {
   let moving = true;
   player.animate = false;
   const textDiv = document.getElementById("textdiv");
-
+  const startgame = document.getElementById("startgame");
   if (textDiv.style.display === "block") {
+    return;
+  }
+  if (startgame.style.display === "flex") {
     return;
   }
   // activate a battle
@@ -424,11 +394,12 @@ window.addEventListener("keyup", (e) => {
   }
 });
 
-let clicked = false;
-addEventListener("click", () => {
-  if (!clicked) {
-    audio.Map.play();
-    clicked = true;
-  }
-});
+// let clicked = false;
+// addEventListener("click", () => {
+//   if (!clicked) {
+//     audio.Map.play();
+//     clicked = true;
+//     audio.loop = true;
+//   }
+// });
 animate();

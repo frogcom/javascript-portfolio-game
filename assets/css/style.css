@@ -6,8 +6,13 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
+  height: 100vw;
+  height: 100vh;
 }
-
+.container {
+  justify-content: center;
+  align-items: center;
+}
 h1 {
   margin: 0;
 }
@@ -26,9 +31,21 @@ button:hover {
   display: flex;
   background-color: #ddd;
   position: absolute;
-  top: 25%;
-  left: 32%;
+  top: 30%;
+  left: 27.5%;
   width: 20em;
   height: max-content;
   font-family: "Press Start 2P";
+}
+#startgame {
+  height: 40vh;
+  width: 50vw;
+  position: absolute;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#stargame:hover {
+  background-color: rgb(195, 186, 186);
 }

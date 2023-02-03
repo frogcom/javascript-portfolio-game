@@ -5,12 +5,10 @@
       "dialoge": [
         {
           "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "3": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "4": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "5": [
+          "2": "test",
+          "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "<h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.</h1> ",
               "github": "github.com",
               "live": "online.test.nl"
             }
@@ -22,13 +20,11 @@
       "title": "about me",
       "dialoge": [
         {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "1": "testttt",
           "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "3": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "4": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "5": [
+          "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "dit is het einde hier de link naar:",
               "github": "github.com",
               "live": "online.test.nl"
             }
@@ -37,14 +33,12 @@
       ]
     },
     "tirth": {
-      "title": "about me",
+      "title": "laravel",
       "dialoge": [
         {
           "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
           "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "3": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "4": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "5": [
+          "3": [
             {
               "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
               "github": "github.com",

@@ -394,12 +394,12 @@ window.addEventListener("keyup", (e) => {
   }
 });
 
-// let clicked = false;
-// addEventListener("click", () => {
-//   if (!clicked) {
-//     audio.Map.play();
-//     clicked = true;
-//     audio.loop = true;
-//   }
-// });
+let clicked = false;
+addEventListener("click", () => {
+  if (!clicked) {
+    audio.Map.play();
+    clicked = true;
+    audio.loop = true;
+  }
+});
 animate();

@@ -39,37 +39,32 @@ function checkForCharacterCollision({
     ) {
       // const textdivtext = document.getElementById("textdivtext");
       document.getElementById("textdiv").style.display = "block";
-      const br = "<br />";
       const next = document.getElementById("nextdetails");
+
+      const close = document.getElementById("close");
       switch (character.uid) {
         case 1:
-          ContentTitle = jsonData.projects.first.title;
-          Dialoge = jsonData.projects.first.dialoge[0][dialogeID];
           next.addEventListener("click", function () {
             dialogeID++;
-            Dialoge = jsonData.projects.first.dialoge[0][dialogeID];
             addDialog(Dialoge);
+            console.log(dialogeID);
+
+            Dialoge = jsonData.projects.first.dialoge[dialogeID];
             if (dialogeID == 3) {
-              Dialoge =
-                jsonData.projects.first.dialoge[0][dialogeID][0].lasttxt;
+              Dialoge = jsonData.projects.first.dialoge[dialogeID][0].lasttxt;
               addDialog(Dialoge);
-              document.getElementById("nextdetails").style.display = "none";
+              document.getElementById("nextdetails").classList.toggle("hidden");
             }
           });
-
-          break;
-        case 2:
-          ContentTitle = jsonData.projects.second.title;
-          Dialoge = jsonData.projects.second.dialoge[0][dialogeID];
-          next.addEventListener("click", function () {
-            dialogeID++;
-            Dialoge = jsonData.projects.second.dialoge[0][dialogeID];
-            addDialog(Dialoge);
+          close.addEventListener("click", function () {
+            console.log(dialogeID);
+            dialogeID = 1;
+            if (dialogeID == 3)
+              document.getElementById("nextdetails").classList.toggle("hidden");
           });
-          if (dialogeID == 3) {
-            Dialoge = jsonData.projects.second.dialoge[0][dialogeID][0];
-            addDialog(Dialoge);
-          }
+
+          ContentTitle = jsonData.projects.first.title;
+          Dialoge = jsonData.projects.first.dialoge[dialogeID];
           break;
         default:
           ContentTitle = "";
@@ -78,7 +73,7 @@ function checkForCharacterCollision({
           break;
       }
 
-      // document.getElementById("github").innerHTML = Github;
+      // docuoment.getElementById("github").innerHTML = Github;
       document.getElementById("dialogetitle").innerHTML = ContentTitle;
       document.getElementById("textdivtext").innerHTML = Dialoge;
     }

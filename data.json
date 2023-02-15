@@ -2,19 +2,17 @@
   "projects": {
     "first": {
       "title": "about me",
-      "dialoge": [
-        {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "test",
-          "3": [
-            {
-              "lasttxt": "<h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.</h1> ",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": " eerste",
+        "2": "tweede",
+        "3": [
+          {
+            "lasttxt": "<h1>derde.</h1> ",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "second": {
       "title": "about me",

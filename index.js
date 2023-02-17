@@ -210,10 +210,10 @@ function animate() {
   player.animate = false;
   const textDiv = document.getElementById("textdiv");
   const startgame = document.getElementById("startgame");
-  if (textDiv.style.display === "block") {
+  if (textDiv.classList.contains("hidden") == false) {
     return;
   }
-  if (startgame.style.display === "flex") {
+  if (startgame.classList.contains("zichtbaar")) {
     return;
   }
   // activate a battle

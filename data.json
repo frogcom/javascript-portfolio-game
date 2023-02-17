@@ -16,19 +16,17 @@
     },
     "second": {
       "title": "about me",
-      "dialoge": [
-        {
-          "1": "testttt",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "3": [
-            {
-              "lasttxt": "dit is het einde hier de link naar:",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": "testttt",
+        "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+        "3": [
+          {
+            "lasttxt": "dit is het einde hier de link naar:",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "tirth": {
       "title": "laravel",

@@ -28,7 +28,6 @@ button:hover {
 }
 #textdiv {
   z-index: 4;
-  display: flex;
   background-color: #ddd;
   position: absolute;
   top: 30%;
@@ -51,4 +50,7 @@ button:hover {
 }
 .hidden {
   display: none;
+}
+.zichtbaar {
+  display: flex;
 }

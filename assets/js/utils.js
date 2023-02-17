@@ -1,13 +1,6 @@
 let jsonData = "";
 let Dialoge;
 
-fetch("data.json")
-  .then((response) => response.json())
-  .then((project) => {
-    jsonData = project;
-  })
-  .catch((error) => console.error(error));
-
 function rectangularCollision({ rectangle1, rectangle2 }) {
   return (
     rectangle1.position.x + rectangle1.width >= rectangle2.position.x &&
@@ -16,7 +9,6 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
     rectangle1.position.y + rectangle1.height >= rectangle2.position.y
   );
 }
-let dialogeID = 1;
 function checkForCharacterCollision({
   characters,
   player,
@@ -25,7 +17,7 @@ function checkForCharacterCollision({
   // monitor for character collision
   for (let i = 0; i < characters.length; i++) {
     const character = characters[i];
-
+    let dialogeID = 1;
     if (
       rectangularCollision({
         rectangle1: player,
@@ -38,53 +30,63 @@ function checkForCharacterCollision({
         },
       })
     ) {
-      // const textdivtext = document.getElementById("textdivtext");
-      document.getElementById("textdiv").style.display = "block";
+      // let dialogeID = 1;
       const next = document.getElementById("nextdetails");
       const close = document.getElementById("close");
+      dialogeID = 1;
+      // const textdivtext = document.getElementById("textdivtext");
+      document.getElementById("textdiv").classList.remove("hidden");
+
       console.log(dialogeID);
       switch (character.uid) {
         case 1:
           ContentTitle = jsonData.projects.first.title;
           Dialoge = jsonData.projects.first.dialoge[dialogeID];
           next.addEventListener("click", function () {
-            dialogeID++;
-            addDialog(Dialoge);
-            console.log(dialogeID);
-
-            if (dialogeID == 2) {
-              Dialoge = jsonData.projects.first.dialoge[dialogeID];
-              addDialog(Dialoge);
+            ++dialogeID;
+            switch (dialogeID) {
+              case 2:
+                Dialoge = jsonData.projects.first.dialoge[dialogeID];
+                addDialog(Dialoge);
+                // ++dialogeID;
+                break;
+              case 3:
+                Dialoge = jsonData.projects.first.dialoge[dialogeID][0].lasttxt;
+                addDialog(Dialoge);
+                //++dialogeID;
+                document.getElementById("nextdetails").classList.add("hidden");
+                break;
+              default:
+                dialogeID = 1;
+                break;
             }
-            // Dialoge = jsonData.projects.first.dialoge[dialogeID];
-            if (dialogeID == 3) {
-              Dialoge = jsonData.projects.first.dialoge[dialogeID][0].lasttxt;
-              addDialog(Dialoge);
-              document.getElementById("nextdetails").classList.add("hidden");
-            }
-          });
-
-          close.addEventListener("click", function () {
             console.log(dialogeID);
-            dialogeID = 1;
-            document.getElementById("nextdetails").classList.remove("hidden");
+            return false;
           });
-
           break;
         default:
           ContentTitle = "";
           Dialoge = "";
+          dialogeID = 1;
           // Github = "";
           break;
       }
-
+      close.addEventListener("click", function () {
+        console.log(dialogeID);
+        dialogeID = 1;
+        document.getElementById("nextdetails").classList.remove("hidden");
+        document.getElementById("textdiv").classList.add("hidden");
+      });
       // docuoment.getElementById("github").innerHTML = Github;
       document.getElementById("dialogetitle").innerHTML = ContentTitle;
       document.getElementById("textdivtext").innerHTML = Dialoge;
+
+      //   npcmessages();
+      //    if true caracter messages
+      //   collitions messages
     }
   }
 }
-
 function addDialog(textOption) {
   // dialogeID++;
   document.getElementById("textdivtext").innerHTML = textOption;

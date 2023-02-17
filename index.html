@@ -16,18 +16,18 @@
 
 <body>
     <div class="container" style="display: flex; position: relative; width: 100vw; height: 100vh;">
-        <div id="startgame" onclick="startGame()" style="display: flex;">
+        <div id="startgame" class="zichtbaar" onclick="startGame()">
             <p>welcome to my portfolio</p><br>
             <p>click here to start the game</p>
 
         </div>
-        <div id="textdiv" style="display: none;">
+        <div id="textdiv" class="hidden">
             <h1 id="dialogetitle"></h1>
             <p id="textdivtext"></p>
             <div id="github">
             </div>
             <button id="nextdetails">next</button>
-            <button onclick="closePopUp()" id="close">close</button>
+            <button id="close">close</button>
         </div>
         <canvas></canvas>
     </div>

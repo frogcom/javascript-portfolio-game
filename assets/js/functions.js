@@ -10,14 +10,20 @@ function startGame() {
   document.getElementById("startgame").classList.add("hidden");
 }
 function npcmessages() {
-  let dialogueID = 1;
-  console.log("test");
-  switch (character.uid) {
-    case 1:
-      console.log("check");
-      break;
+  for (let i = 0; i < characters.length; i++) {
+    const character = characters[i];
 
-    default:
-      break;
+    {
+      let dialogueID = 1;
+      console.log("test");
+      switch (character.uid) {
+        case 1:
+          console.log("check");
+          break;
+
+        default:
+          break;
+      }
+    }
   }
 }

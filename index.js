@@ -176,21 +176,6 @@ const foreground = new Sprite({
   image: foregroundImage,
 });
 
-const keys = {
-  w: {
-    pressed: false,
-  },
-  a: {
-    pressed: false,
-  },
-  s: {
-    pressed: false,
-  },
-  d: {
-    pressed: false,
-  },
-};
-
 const movables = [background, ...boundaries, foreground, ...characters];
 const renderables = [
   background,
@@ -216,7 +201,6 @@ function animate() {
   if (startgame.classList.contains("zichtbaar")) {
     return;
   }
-  // activate a battle
 
   if (keys.w.pressed && lastKey === "w") {
     player.animate = true;
@@ -352,47 +336,6 @@ function animate() {
   }
 }
 // animate()
-
-let lastKey = "";
-window.addEventListener("keydown", (e) => {
-  switch (e.key) {
-    case "w":
-      keys.w.pressed = true;
-      lastKey = "w";
-      break;
-    case "a":
-      keys.a.pressed = true;
-      lastKey = "a";
-      break;
-
-    case "s":
-      keys.s.pressed = true;
-      lastKey = "s";
-      break;
-
-    case "d":
-      keys.d.pressed = true;
-      lastKey = "d";
-      break;
-  }
-});
-
-window.addEventListener("keyup", (e) => {
-  switch (e.key) {
-    case "w":
-      keys.w.pressed = false;
-      break;
-    case "a":
-      keys.a.pressed = false;
-      break;
-    case "s":
-      keys.s.pressed = false;
-      break;
-    case "d":
-      keys.d.pressed = false;
-      break;
-  }
-});
 
 let clicked = false;
 addEventListener("click", () => {

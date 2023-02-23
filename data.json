@@ -7,7 +7,7 @@
         "2": "tweede",
         "3": [
           {
-            "lasttxt": "<h1>derde.</h1> ",
+            "lasttxt": "derde.",
             "github": "github.com",
             "live": "online.test.nl"
           }

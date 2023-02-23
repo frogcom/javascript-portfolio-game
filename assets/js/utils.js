@@ -2,11 +2,15 @@ let jsonData = "";
 let Dialoge;
 
 function rectangularCollision({ rectangle1, rectangle2 }) {
+  const rect1Right = rectangle1.position.x + rectangle1.width;
+  const rect2Right = rectangle2.position.x + rectangle2.width;
+  const rect1Bottom = rectangle1.position.y + rectangle1.height;
+  const rect2Bottom = rectangle2.position.y + rectangle2.height - 48;
   return (
-    rectangle1.position.x + rectangle1.width >= rectangle2.position.x &&
-    rectangle1.position.x <= rectangle2.position.x + rectangle2.width &&
-    rectangle1.position.y <= rectangle2.position.y + (rectangle2.height - 48) &&
-    rectangle1.position.y + rectangle1.height >= rectangle2.position.y
+    rect1Right >= rectangle2.position.x &&
+    rectangle1.position.x <= rect2Right &&
+    rectangle1.position.y <= rect2Bottom &&
+    rect1Bottom >= rectangle2.position.y
   );
 }
 function checkForCharacterCollision({
@@ -57,6 +61,58 @@ function checkForCharacterCollision({
                 document.getElementById("nextdetails").classList.add("hidden");
                 break;
               default:
+                // dialogeID = 1;
+                break;
+            }
+            console.log(dialogeID);
+            return false;
+          });
+          break;
+        case 2:
+          ContentTitle = jsonData.projects.second.title;
+          Dialoge = jsonData.projects.second.dialoge[dialogeID];
+          next.addEventListener("click", function () {
+            ++dialogeID;
+            switch (dialogeID) {
+              case 2:
+                Dialoge = jsonData.projects.second.dialoge[dialogeID];
+                addDialog(Dialoge);
+                // ++dialogeID;
+                break;
+              case 3:
+                Dialoge =
+                  jsonData.projects.second.dialoge[dialogeID][0].lasttxt;
+                addDialog(Dialoge);
+                //++dialogeID;
+                document.getElementById("nextdetails").classList.add("hidden");
+                break;
+              default:
+                dialogeID = 1;
+                break;
+            }
+            console.log(dialogeID);
+            return false;
+          });
+          break;
+        case 3:
+          ContentTitle = jsonData.projects.tirth.title;
+          Dialoge = jsonData.projects.tirth.dialoge[dialogeID];
+          next.addEventListener("click", function () {
+            ++dialogeID;
+            wd;
+            switch (dialogeID) {
+              case 2:
+                Dialoge = jsonData.projects.tirth.dialoge[dialogeID];
+                addDialog(Dialoge);
+                // ++dialogeID;
+                break;
+              case 3:
+                Dialoge = jsonData.projects.tirth.dialoge[dialogeID][0].lasttxt;
+                addDialog(Dialoge);
+                //++dialogeID;
+                document.getElementById("nextdetails").classList.add("hidden");
+                break;
+              default:
                 dialogeID = 1;
                 break;
             }
@@ -71,19 +127,15 @@ function checkForCharacterCollision({
           // Github = "";
           break;
       }
-      close.addEventListener("click", function () {
-        console.log(dialogeID);
+      close.addEventListener("click", function closeClickHandler() {
         dialogeID = 1;
         document.getElementById("nextdetails").classList.remove("hidden");
         document.getElementById("textdiv").classList.add("hidden");
+        console.log(dialogeID);
       });
       // docuoment.getElementById("github").innerHTML = Github;
       document.getElementById("dialogetitle").innerHTML = ContentTitle;
       document.getElementById("textdivtext").innerHTML = Dialoge;
-
-      //   npcmessages();
-      //    if true caracter messages
-      //   collitions messages
     }
   }
 }

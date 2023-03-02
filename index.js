@@ -25,8 +25,8 @@ for (let i = 0; i < projectZonesData.length; i += 120) {
 const boundaries = [];
 const projects = [];
 const offset = {
-  x: -1750,
-  y: -0,
+  x: -2000,
+  y: -200,
 };
 
 collisionsMap.forEach((row, i) => {
@@ -184,7 +184,7 @@ const renderables = [
   player,
   foreground,
 ];
-
+let movementspeed = 7;
 function animate() {
   const animationId = window.requestAnimationFrame(animate);
   renderables.forEach((renderable) => {
@@ -221,7 +221,7 @@ function animate() {
             ...boundary,
             position: {
               x: boundary.position.x,
-              y: boundary.position.y + 3,
+              y: boundary.position.y + movementspeed,
             },
           },
         })
@@ -233,7 +233,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.y += 3;
+        movable.position.y += movementspeed;
       });
   } else if (keys.a.pressed && lastKey === "a") {
     player.animate = true;
@@ -253,7 +253,7 @@ function animate() {
           rectangle2: {
             ...boundary,
             position: {
-              x: boundary.position.x + 3,
+              x: boundary.position.x + movementspeed,
               y: boundary.position.y,
             },
           },
@@ -266,7 +266,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.x += 3;
+        movable.position.x += movementspeed;
       });
   } else if (keys.s.pressed && lastKey === "s") {
     player.animate = true;
@@ -287,7 +287,7 @@ function animate() {
             ...boundary,
             position: {
               x: boundary.position.x,
-              y: boundary.position.y - 3,
+              y: boundary.position.y - movementspeed,
             },
           },
         })
@@ -299,7 +299,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.y -= 3;
+        movable.position.y -= movementspeed;
       });
   } else if (keys.d.pressed && lastKey === "d") {
     player.animate = true;
@@ -318,7 +318,7 @@ function animate() {
           rectangle2: {
             ...boundary,
             position: {
-              x: boundary.position.x - 3,
+              x: boundary.position.x - movementspeed,
               y: boundary.position.y,
             },
           },
@@ -331,7 +331,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.x -= 3;
+        movable.position.x -= movementspeed;
       });
   }
 }

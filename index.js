@@ -25,8 +25,8 @@ for (let i = 0; i < projectZonesData.length; i += 120) {
 const boundaries = [];
 const projects = [];
 const offset = {
-  x: -285,
-  y: -450,
+  x: -1750,
+  y: -0,
 };
 
 collisionsMap.forEach((row, i) => {
@@ -72,7 +72,7 @@ oldManImg.src = "./assets/img/oldMan/Idle.png";
 charactersMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
     // 1026 === villager
-    if (symbol === 1025) {
+    if (symbol === 1026) {
       characters.push(
         new Sprite({
           uid: 1,

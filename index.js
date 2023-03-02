@@ -72,7 +72,7 @@ oldManImg.src = "./assets/img/oldMan/Idle.png";
 charactersMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
     // 1026 === villager
-    if (symbol === 1026) {
+    if (symbol === 1025) {
       characters.push(
         new Sprite({
           uid: 1,

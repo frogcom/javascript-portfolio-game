@@ -10,17 +10,17 @@ canvasW = canvas.width;
 canvasH = canvas.height;
 
 const collisionsMap = [];
-for (let i = 0; i < collisions.length; i += 70) {
-  collisionsMap.push(collisions.slice(i, 70 + i));
+for (let i = 0; i < collisions.length; i += 120) {
+  collisionsMap.push(collisions.slice(i, 120 + i));
 }
 
 const charactersMap = [];
-for (let i = 0; i < charactersMapData.length; i += 70) {
-  charactersMap.push(charactersMapData.slice(i, 70 + i));
+for (let i = 0; i < charactersMapData.length; i += 120) {
+  charactersMap.push(charactersMapData.slice(i, 120 + i));
 }
 const projectZones = [];
-for (let i = 0; i < projectZonesData.length; i += 70) {
-  projectZones.push(projectZonesData.slice(i, 70 + i));
+for (let i = 0; i < projectZonesData.length; i += 120) {
+  projectZones.push(projectZonesData.slice(i, 120 + i));
 }
 const boundaries = [];
 const projects = [];
@@ -72,7 +72,7 @@ oldManImg.src = "./assets/img/oldMan/Idle.png";
 charactersMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
     // 1026 === villager
-    if (symbol === 1026) {
+    if (symbol === 1025) {
       characters.push(
         new Sprite({
           uid: 1,

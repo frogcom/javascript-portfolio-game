@@ -13,20 +13,19 @@ const collisionsMap = [];
 for (let i = 0; i < collisions.length; i += 120) {
   collisionsMap.push(collisions.slice(i, 120 + i));
 }
-
 const charactersMap = [];
 for (let i = 0; i < charactersMapData.length; i += 120) {
   charactersMap.push(charactersMapData.slice(i, 120 + i));
 }
-const projectZones = [];
-for (let i = 0; i < projectZonesData.length; i += 120) {
-  projectZones.push(projectZonesData.slice(i, 120 + i));
+const projectsMap = [];
+for (let i = 0; i < projectMapData.length; i += 120) {
+  projectsMap.push(projectMapData.slice(i, 120 + i));
 }
 const boundaries = [];
 const projects = [];
 const offset = {
-  x: -2000,
-  y: -200,
+  x: -1990,
+  y: -00,
 };
 
 collisionsMap.forEach((row, i) => {
@@ -41,25 +40,6 @@ collisionsMap.forEach((row, i) => {
         })
       );
   });
-});
-
-projectZonesData.forEach((row, i) => {
-  if (Array.isArray(row)) {
-    row.forEach((symbol, j) => {
-      if (symbol === 1025) {
-        projectZones.push(
-          new Boundary({
-            position: {
-              x: j * Boundary.width + offset.x,
-              y: i * Boundary.height + offset.y,
-            },
-          })
-        );
-      }
-    });
-  } else {
-    // Handle non-array value of row
-  }
 });
 
 const characters = [];
@@ -86,10 +66,6 @@ charactersMap.forEach((row, i) => {
             hold: 60,
           },
           scale: 3,
-          dialoge: {
-            dialoge1: "hakdsfkjhkasldfa",
-            dialoge2: "ladsfjalskfdjsldjflsajfdladfladsjkflsajdflafdj",
-          },
         })
       );
     }
@@ -97,7 +73,6 @@ charactersMap.forEach((row, i) => {
     else if (symbol === 1031) {
       characters.push(
         new Sprite({
-          uid: 2,
           position: {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y,
@@ -124,6 +99,48 @@ charactersMap.forEach((row, i) => {
     }
   });
 });
+
+// projectsMap.forEach((row, i) => {
+//   row.forEach((symbol, j) => {
+//     // 1026 === villager
+//     if (symbol === 1025) {
+//       projects.push(
+//         new Sprite({
+//           uid: 1,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: testImg,
+//         })
+//       );
+//     }
+//     // 1031 === oldMan
+//     else if (symbol === 1026) {
+//       projects.push(
+//         new Sprite({
+//           uid: 2,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: testImg,
+//         })
+//       );
+//     }
+//     if (symbol !== 0) {
+//       boundaries.push(
+//         new Boundary({
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//         })
+//       );
+//     }
+//   });
+// });
+
 const image = new Image();
 image.src = "./assets/img/Pellet Town.png";
 

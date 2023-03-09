@@ -25,7 +25,7 @@ const boundaries = [];
 const projects = [];
 const offset = {
   x: -2100,
-  y: -0,
+  y: -100,
 };
 
 collisionsMap.forEach((row, i) => {
@@ -44,8 +44,9 @@ collisionsMap.forEach((row, i) => {
 
 const characters = [];
 const villagerImg = new Image();
-villagerImg.src = "./assets/img/villager/Idle.png";
-
+villagerImg.src = "./assets/img/villager/idle.png";
+const doorImg = new Image();
+doorImg.src = "./assets/img/test2.png";
 const oldManImg = new Image();
 oldManImg.src = "./assets/img/oldMan/Idle.png";
 
@@ -60,11 +61,7 @@ charactersMap.forEach((row, i) => {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y,
           },
-          image: villagerImg,
-          frames: {
-            max: 4,
-            hold: 60,
-          },
+          image: doorImg,
           scale: 3,
         })
       );
@@ -73,6 +70,7 @@ charactersMap.forEach((row, i) => {
     else if (symbol === 1031) {
       characters.push(
         new Sprite({
+          uid: 2,
           position: {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y,
@@ -160,7 +158,7 @@ const renderables = [
   player,
   foreground,
 ];
-let movementspeed = 7;
+let movementspeed = 6;
 function animate() {
   const animationId = window.requestAnimationFrame(animate);
   renderables.forEach((renderable) => {
@@ -209,7 +207,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.y += 15;
+        movable.position.y += movementspeed;
       });
   } else if (keys.a.pressed && lastKey === "a") {
     player.animate = true;
@@ -242,7 +240,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.x += 15;
+        movable.position.x += movementspeed;
       });
   } else if (keys.s.pressed && lastKey === "s") {
     player.animate = true;
@@ -275,7 +273,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.y -= 15;
+        movable.position.y -= movementspeed;
       });
   } else if (keys.d.pressed && lastKey === "d") {
     player.animate = true;
@@ -307,7 +305,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.x -= 15;
+        movable.position.x -= movementspeed;
       });
   }
 }

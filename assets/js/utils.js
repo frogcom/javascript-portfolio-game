@@ -45,18 +45,19 @@ function checkForCharacterCollision({
       console.log(dialogeID);
       switch (character.uid) {
         case 1:
-          ContentTitle = jsonData.projects.first.title;
-          Dialoge = jsonData.projects.first.dialoge[dialogeID];
+          ContentTitle = jsonData.projects.eerste.title;
+          Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
           next.addEventListener("click", function () {
             ++dialogeID;
             switch (dialogeID) {
               case 2:
-                Dialoge = jsonData.projects.first.dialoge[dialogeID];
+                Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
                 addDialog(Dialoge);
                 // ++dialogeID;
                 break;
               case 3:
-                Dialoge = jsonData.projects.first.dialoge[dialogeID][0].lasttxt;
+                Dialoge =
+                  jsonData.projects.eerste.dialoge[dialogeID][0].lasttxt;
                 addDialog(Dialoge);
                 //++dialogeID;
                 document.getElementById("nextdetails").classList.add("hidden");

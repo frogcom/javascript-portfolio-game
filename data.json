@@ -1,6 +1,6 @@
 {
   "projects": {
-    "first": {
+    "eerste": {
       "title": "about me",
       "dialoge": {
         "1": " eerste",
@@ -14,7 +14,7 @@
         ]
       }
     },
-    "second": {
+    "tweede": {
       "title": "about me",
       "dialoge": {
         "1": "testttt",
@@ -28,7 +28,119 @@
         ]
       }
     },
-    "tirth": {
+    "derde": {
+      "title": "laravel",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "vierde": {
+      "title": "laravel",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "sixth": {
+      "title": "laravel",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "seventh": {
+      "title": "laravel",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "acht": {
+      "title": "laravel",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "negen": {
+      "title": "laravel",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "tien": {
+      "title": "laravel",
+      "dialoge": [
+        {
+          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "3": [
+            {
+              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "eleven": {
       "title": "laravel",
       "dialoge": [
         {

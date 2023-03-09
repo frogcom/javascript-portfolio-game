@@ -24,8 +24,8 @@ for (let i = 0; i < projectMapData.length; i += 120) {
 const boundaries = [];
 const projects = [];
 const offset = {
-  x: -1990,
-  y: -00,
+  x: -2100,
+  y: -0,
 };
 
 collisionsMap.forEach((row, i) => {
@@ -99,47 +99,6 @@ charactersMap.forEach((row, i) => {
     }
   });
 });
-
-// projectsMap.forEach((row, i) => {
-//   row.forEach((symbol, j) => {
-//     // 1026 === villager
-//     if (symbol === 1025) {
-//       projects.push(
-//         new Sprite({
-//           uid: 1,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: testImg,
-//         })
-//       );
-//     }
-//     // 1031 === oldMan
-//     else if (symbol === 1026) {
-//       projects.push(
-//         new Sprite({
-//           uid: 2,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: testImg,
-//         })
-//       );
-//     }
-//     if (symbol !== 0) {
-//       boundaries.push(
-//         new Boundary({
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//         })
-//       );
-//     }
-//   });
-// });
 
 const image = new Image();
 image.src = "./assets/img/Pellet Town.png";
@@ -238,7 +197,7 @@ function animate() {
             ...boundary,
             position: {
               x: boundary.position.x,
-              y: boundary.position.y + movementspeed,
+              y: boundary.position.y + 3,
             },
           },
         })
@@ -250,7 +209,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.y += movementspeed;
+        movable.position.y += 15;
       });
   } else if (keys.a.pressed && lastKey === "a") {
     player.animate = true;
@@ -270,7 +229,7 @@ function animate() {
           rectangle2: {
             ...boundary,
             position: {
-              x: boundary.position.x + movementspeed,
+              x: boundary.position.x + 3,
               y: boundary.position.y,
             },
           },
@@ -283,7 +242,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.x += movementspeed;
+        movable.position.x += 15;
       });
   } else if (keys.s.pressed && lastKey === "s") {
     player.animate = true;
@@ -304,7 +263,7 @@ function animate() {
             ...boundary,
             position: {
               x: boundary.position.x,
-              y: boundary.position.y - movementspeed,
+              y: boundary.position.y - 3,
             },
           },
         })
@@ -316,7 +275,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.y -= movementspeed;
+        movable.position.y -= 15;
       });
   } else if (keys.d.pressed && lastKey === "d") {
     player.animate = true;
@@ -335,7 +294,7 @@ function animate() {
           rectangle2: {
             ...boundary,
             position: {
-              x: boundary.position.x - movementspeed,
+              x: boundary.position.x - 3,
               y: boundary.position.y,
             },
           },
@@ -348,7 +307,7 @@ function animate() {
 
     if (moving)
       movables.forEach((movable) => {
-        movable.position.x -= movementspeed;
+        movable.position.x -= 15;
       });
   }
 }

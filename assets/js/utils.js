@@ -35,6 +35,7 @@ function checkForCharacterCollision({
       })
     ) {
       // let dialogeID = 1;
+      console.log("collideee");
       const next = document.getElementById("nextdetails");
       const close = document.getElementById("close");
       dialogeID = 1;

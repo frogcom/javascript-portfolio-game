@@ -50,13 +50,27 @@ doorImg.src = "./assets/img/test2.png";
 const oldManImg = new Image();
 oldManImg.src = "./assets/img/oldMan/Idle.png";
 
+const characterMap = {
+  1025: 1, // villager
+  1026: 2, // oldMan
+  1027: 3,
+  1028: 3,
+  1029: 4,
+  1030: 5,
+  1031: 6,
+  1032: 8,
+  1033: 9,
+  1034: 10,
+  1035: 11,
+};
+
 charactersMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
-    // 1026 === villager
-    if (symbol === 1025) {
+    const uid = characterMap[symbol];
+    if (uid) {
       characters.push(
         new Sprite({
-          uid: 1,
+          uid,
           position: {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y,
@@ -66,25 +80,6 @@ charactersMap.forEach((row, i) => {
         })
       );
     }
-    // 1031 === oldMan
-    else if (symbol === 1031) {
-      characters.push(
-        new Sprite({
-          uid: 2,
-          position: {
-            x: j * Boundary.width + offset.x,
-            y: i * Boundary.height + offset.y,
-          },
-          image: oldManImg,
-          frames: {
-            max: 4,
-            hold: 60,
-          },
-          scale: 3,
-        })
-      );
-    }
-
     if (symbol !== 0) {
       boundaries.push(
         new Boundary({
@@ -97,6 +92,168 @@ charactersMap.forEach((row, i) => {
     }
   });
 });
+// charactersMap.forEach((row, i) => {
+//   row.forEach((symbol, j) => {
+//     // 1026 === villager
+//     if (symbol === 1025) {
+//       characters.push(
+//         new Sprite({
+//           uid: 1,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     }
+//     // 1031 === oldMan
+//     else if (symbol === 1026) {
+//       characters.push(
+//         new Sprite({
+//           uid: 2,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1027) {
+//       characters.push(
+//         new Sprite({
+//           uid: 3,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1028) {
+//       characters.push(
+//         new Sprite({
+//           uid: 3,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1029) {
+//       characters.push(
+//         new Sprite({
+//           uid: 4,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1030) {
+//       characters.push(
+//         new Sprite({
+//           uid: 5,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1031) {
+//       characters.push(
+//         new Sprite({
+//           uid: 6,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1032) {
+//       characters.push(
+//         new Sprite({
+//           uid: 7,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1032) {
+//       characters.push(
+//         new Sprite({
+//           uid: 8,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1033) {
+//       characters.push(
+//         new Sprite({
+//           uid: 9,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1034) {
+//       characters.push(
+//         new Sprite({
+//           uid: 10,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     } else if (symbol === 1035) {
+//       characters.push(
+//         new Sprite({
+//           uid: 11,
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//           image: doorImg,
+//           scale: 3,
+//         })
+//       );
+//     }
+//     if (symbol !== 0) {
+//       boundaries.push(
+//         new Boundary({
+//           position: {
+//             x: j * Boundary.width + offset.x,
+//             y: i * Boundary.height + offset.y,
+//           },
+//         })
+//       );
+//     }
+//   });
+// });
 
 const image = new Image();
 image.src = "./assets/img/Pellet Town.png";
@@ -308,8 +465,141 @@ function animate() {
         movable.position.x -= movementspeed;
       });
   }
+  // else if (keys.W.pressed && lastKey === "W") {
+  //   player.animate = true;
+  //   player.image = player.sprites.up;
+
+  //   checkForCharacterCollision({
+  //     characters,
+  //     player,
+  //     characterOffset: { x: 0, y: 3 },
+  //   });
+
+  //   for (let i = 0; i < boundaries.length; i++) {
+  //     const boundary = boundaries[i];
+  //     if (
+  //       rectangularCollision({
+  //         rectangle1: player,
+  //         rectangle2: {
+  //           ...boundary,
+  //           position: {
+  //             x: boundary.position.x,
+  //             y: boundary.position.y + 3,
+  //           },
+  //         },
+  //       })
+  //     ) {
+  //       moving = false;
+  //       break;
+  //     }
+  //   }
+
+  //   if (moving)
+  //     movables.forEach((movable) => {
+  //       movable.position.y += movementspeed;
+  //     });
+  // }
+  // else if (keys.A.pressed && lastKey === "A") {
+  //     player.animate = true;
+  //     player.image = player.sprites.left;
+
+  //     checkForCharacterCollision({
+  //       characters,
+  //       player,
+  //       characterOffset: { x: 3, y: 0 },
+  //     });
+
+  //     for (let i = 0; i < boundaries.length; i++) {
+  //       const boundary = boundaries[i];
+  //       if (
+  //         rectangularCollision({
+  //           rectangle1: player,
+  //           rectangle2: {
+  //             ...boundary,
+  //             position: {
+  //               x: boundary.position.x + 3,
+  //               y: boundary.position.y,
+  //             },
+  //           },
+  //         })
+  //       ) {
+  //         moving = false;
+  //         break;
+  //       }
+  //     }
+
+  //     if (moving)
+  //       movables.forEach((movable) => {
+  //         movable.position.x += movementspeed;
+  //       });
+  //   } else if (keys.S.pressed && lastKey === "S") {
+  //     player.animate = true;
+  //     player.image = player.sprites.down;
+
+  //     checkForCharacterCollision({
+  //       characters,
+  //       player,
+  //       characterOffset: { x: 0, y: -3 },
+  //     });
+
+  //     for (let i = 0; i < boundaries.length; i++) {
+  //       const boundary = boundaries[i];
+  //       if (
+  //         rectangularCollision({
+  //           rectangle1: player,
+  //           rectangle2: {
+  //             ...boundary,
+  //             position: {
+  //               x: boundary.position.x,
+  //               y: boundary.position.y - 3,
+  //             },
+  //           },
+  //         })
+  //       ) {
+  //         moving = false;
+  //         break;
+  //       }
+  //     }
+
+  //     if (moving)
+  //       movables.forEach((movable) => {
+  //         movable.position.y -= movementspeed;
+  //       });
+  //   } else if (keys.D.pressed && lastKey === "D") {
+  //     player.animate = true;
+  //     player.image = player.sprites.right;
+
+  //     checkForCharacterCollision({
+  //       characters,
+  //       player,
+  //       characterOffset: { x: -3, y: 0 },
+  //     });
+  //     for (let i = 0; i < boundaries.length; i++) {
+  //       const boundary = boundaries[i];
+  //       if (
+  //         rectangularCollision({
+  //           rectangle1: player,
+  //           rectangle2: {
+  //             ...boundary,
+  //             position: {
+  //               x: boundary.position.x - 3,
+  //               y: boundary.position.y,
+  //             },
+  //           },
+  //         })
+  //       ) {
+  //         moving = false;
+  //         break;
+  //       }
+  //     }
+
+  //     if (moving)
+  //       movables.forEach((movable) => {
+  //         movable.position.x -= movementspeed;
+  //       });
+  //   }
 }
-// animate()
+animate();
 
 let clicked = false;
 addEventListener("click", () => {

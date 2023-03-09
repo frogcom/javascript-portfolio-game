@@ -3,11 +3,11 @@
     "eerste": {
       "title": "about me",
       "dialoge": {
-        "1": " eerste",
-        "2": "tweede",
+        "1": " ik ben Cas meijer een 2e jaar student webdeveloper. met een intressen in node.js laravel en het gebruiken van linux",
+        "2": "ik heb opschool ervaring gedaan met <ul><li> HTML</li> <li>CSS</li> <li> SASS</li> <li> JavaScript</li> <li> Python</li> <li>PHP</li> <li> sql</li> <li> Node.js </li>\r en frameworks als laravel Django en react ",
         "3": [
           {
-            "lasttxt": "derde.",
+            "lasttxt": "wil je meer over mijn projecten weten of naar me socials gaan loop gerust hier rond",
             "github": "github.com",
             "live": "online.test.nl"
           }
@@ -15,9 +15,9 @@
       }
     },
     "tweede": {
-      "title": "about me",
+      "title": "dit portolio",
       "dialoge": {
-        "1": "testttt",
+        "1": "dit portolio is gemaakt in plain javascript. dit project begon aan het eind van het eerste schooljaar. \rwe moesten een game maken in javascript en vond dat een leuk project die ik een keer verder wou uitwerken.\r had daar aleen nooit een plan voor. ",
         "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
         "3": [
           {
@@ -29,7 +29,7 @@
       }
     },
     "derde": {
-      "title": "laravel",
+      "title": "laravel 3",
       "dialoge": [
         {
           "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
@@ -45,14 +45,30 @@
       ]
     },
     "vierde": {
-      "title": "laravel",
+      "title": "dit word snel geupdate 1",
       "dialoge": [
         {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
           "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+              "github": "github.com",
+              "live": "online.test.nl"
+            }
+          ]
+        }
+      ]
+    },
+    "vijfde": {
+      "title": "laravel2",
+      "dialoge": [
+        {
+          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "3": [
+            {
+              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
               "github": "github.com",
               "live": "online.test.nl"
             }
@@ -61,14 +77,14 @@
       ]
     },
     "sixth": {
-      "title": "laravel",
+      "title": "laravel3",
       "dialoge": [
         {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
           "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
               "github": "github.com",
               "live": "online.test.nl"
             }
@@ -77,14 +93,14 @@
       ]
     },
     "seventh": {
-      "title": "laravel",
+      "title": "laravel4",
       "dialoge": [
         {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
           "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
               "github": "github.com",
               "live": "online.test.nl"
             }
@@ -93,14 +109,14 @@
       ]
     },
     "acht": {
-      "title": "laravel",
+      "title": "laravel5",
       "dialoge": [
         {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
           "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
               "github": "github.com",
               "live": "online.test.nl"
             }
@@ -109,14 +125,14 @@
       ]
     },
     "negen": {
-      "title": "laravel",
+      "title": "laravel6",
       "dialoge": [
         {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
           "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
               "github": "github.com",
               "live": "online.test.nl"
             }
@@ -125,14 +141,14 @@
       ]
     },
     "tien": {
-      "title": "laravel",
+      "title": "laravel7",
       "dialoge": [
         {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
           "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
               "github": "github.com",
               "live": "online.test.nl"
             }
@@ -141,14 +157,14 @@
       ]
     },
     "eleven": {
-      "title": "laravel",
+      "title": "laravel8 ",
       "dialoge": [
         {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
           "3": [
             {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
               "github": "github.com",
               "live": "online.test.nl"
             }

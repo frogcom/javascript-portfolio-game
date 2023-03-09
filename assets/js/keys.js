@@ -34,6 +34,23 @@ window.addEventListener("keydown", (e) => {
       keys.d.pressed = true;
       lastKey = "d";
       break;
+
+    // case "W":
+    //   keys.W.pressed = true;
+    //   lastKey = "W";
+    //   break;
+    // case "A":
+    //   keys.A.pressed = true;
+    //   lastKey = "A";
+    //   break;
+    // case "S":
+    //   keys.S.pressed = true;
+    //   lastKey = "S";
+    //   break;
+    // case "D":
+    //   keys.D.pressed = true;
+    //   lastKey = "D";
+    //   break;
   }
 });
 
@@ -51,5 +68,17 @@ window.addEventListener("keyup", (e) => {
     case "d":
       keys.d.pressed = false;
       break;
+    // case "W":
+    //   keys.W.pressed = false;
+    //   break;
+    // case "A":
+    //   keys.A.pressed = false;
+    //   break;
+    // case "S":
+    //   keys.S.pressed = false;
+    //   break;
+    // case "D":
+    //   keys.D.pressed = false;
+    //   break;
   }
 });

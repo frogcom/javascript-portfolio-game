@@ -51,8 +51,8 @@ const oldManImg = new Image();
 oldManImg.src = "./assets/img/oldMan/Idle.png";
 
 const characterMap = {
-  1025: 1, // villager
-  1026: 2, // oldMan
+  1025: 1,
+  1026: 2,
   1027: 3,
   1028: 3,
   1029: 4,
@@ -92,168 +92,6 @@ charactersMap.forEach((row, i) => {
     }
   });
 });
-// charactersMap.forEach((row, i) => {
-//   row.forEach((symbol, j) => {
-//     // 1026 === villager
-//     if (symbol === 1025) {
-//       characters.push(
-//         new Sprite({
-//           uid: 1,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     }
-//     // 1031 === oldMan
-//     else if (symbol === 1026) {
-//       characters.push(
-//         new Sprite({
-//           uid: 2,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1027) {
-//       characters.push(
-//         new Sprite({
-//           uid: 3,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1028) {
-//       characters.push(
-//         new Sprite({
-//           uid: 3,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1029) {
-//       characters.push(
-//         new Sprite({
-//           uid: 4,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1030) {
-//       characters.push(
-//         new Sprite({
-//           uid: 5,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1031) {
-//       characters.push(
-//         new Sprite({
-//           uid: 6,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1032) {
-//       characters.push(
-//         new Sprite({
-//           uid: 7,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1032) {
-//       characters.push(
-//         new Sprite({
-//           uid: 8,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1033) {
-//       characters.push(
-//         new Sprite({
-//           uid: 9,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1034) {
-//       characters.push(
-//         new Sprite({
-//           uid: 10,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     } else if (symbol === 1035) {
-//       characters.push(
-//         new Sprite({
-//           uid: 11,
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//           image: doorImg,
-//           scale: 3,
-//         })
-//       );
-//     }
-//     if (symbol !== 0) {
-//       boundaries.push(
-//         new Boundary({
-//           position: {
-//             x: j * Boundary.width + offset.x,
-//             y: i * Boundary.height + offset.y,
-//           },
-//         })
-//       );
-//     }
-//   });
-// });
 
 const image = new Image();
 image.src = "./assets/img/Pellet Town.png";
@@ -315,7 +153,7 @@ const renderables = [
   player,
   foreground,
 ];
-let movementspeed = 6;
+let movementspeed = 5;
 function animate() {
   const animationId = window.requestAnimationFrame(animate);
   renderables.forEach((renderable) => {

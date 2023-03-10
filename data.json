@@ -30,147 +30,129 @@
     },
     "derde": {
       "title": "laravel 3",
-      "dialoge": [
-        {
-          "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-          "3": [
-            {
-              "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+        "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+        "3": [
+          {
+            "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "vierde": {
       "title": "dit word snel geupdate 1",
-      "dialoge": [
-        {
-          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "3": [
-            {
-              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "3": [
+          {
+            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "vijfde": {
       "title": "laravel2",
-      "dialoge": [
-        {
-          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "3": [
-            {
-              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "3": [
+          {
+            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "sixth": {
       "title": "laravel3",
-      "dialoge": [
-        {
-          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "3": [
-            {
-              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "3": [
+          {
+            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "seventh": {
       "title": "laravel4",
-      "dialoge": [
-        {
-          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "3": [
-            {
-              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "3": [
+          {
+            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "acht": {
-      "title": "laravel5",
-      "dialoge": [
-        {
-          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "3": [
-            {
-              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "title": "secret",
+      "dialoge": {
+        "1": "SSSSSSST, \r je hebt me geheime project gevonden dat niemand mocht weten. klik snel verder voor meer informatie",
+        "2": "momenteel is hier nog niks te vinden kijasdfasSE",
+        "3": [
+          {
+            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "negen": {
       "title": "laravel6",
-      "dialoge": [
-        {
-          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "3": [
-            {
-              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "3": [
+          {
+            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "tien": {
       "title": "laravel7",
-      "dialoge": [
-        {
-          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "3": [
-            {
-              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "3": [
+          {
+            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     },
     "eleven": {
       "title": "laravel8 ",
-      "dialoge": [
-        {
-          "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
-          "3": [
-            {
-              "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
-              "github": "github.com",
-              "live": "online.test.nl"
-            }
-          ]
-        }
-      ]
+      "dialoge": {
+        "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "3": [
+          {
+            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "github": "github.com",
+            "live": "online.test.nl"
+          }
+        ]
+      }
     }
   }
 }

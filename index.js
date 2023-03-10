@@ -6,8 +6,8 @@ const c = canvas.getContext("2d");
 
 // canvas.width = document.body.clientWidth; //document.width is obsolete
 // canvas.height = document.body.clientHeight; //document.height is obsolete
-canvas.width = 1280;
-canvas.height = 720;
+canvas.width = 3000;
+canvas.height = 2000;
 canvasW = canvas.width;
 canvasH = canvas.height;
 
@@ -26,8 +26,8 @@ for (let i = 0; i < projectMapData.length; i += 120) {
 const boundaries = [];
 const projects = [];
 const offset = {
-  x: -2050,
-  y: -100,
+  x: -1175,
+  y: 550,
 };
 
 collisionsMap.forEach((row, i) => {

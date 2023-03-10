@@ -4,8 +4,10 @@ const c = canvas.getContext("2d");
 // canvas.width = 100vw;
 // canvas.height = 1024;
 
-canvas.width = document.body.clientWidth; //document.width is obsolete
-canvas.height = document.body.clientHeight; //document.height is obsolete
+// canvas.width = document.body.clientWidth; //document.width is obsolete
+// canvas.height = document.body.clientHeight; //document.height is obsolete
+canvas.width = 1280;
+canvas.height = 720;
 canvasW = canvas.width;
 canvasH = canvas.height;
 
@@ -24,7 +26,7 @@ for (let i = 0; i < projectMapData.length; i += 120) {
 const boundaries = [];
 const projects = [];
 const offset = {
-  x: -2100,
+  x: -2050,
   y: -100,
 };
 
@@ -153,9 +155,13 @@ const renderables = [
   player,
   foreground,
 ];
-let movementspeed = 5;
+
+let movementspeed = 3;
 function animate() {
   const animationId = window.requestAnimationFrame(animate);
+
+  //als de speler in een boundary spawned dan moet nieuwe positie gemaakt worden binnen boundarie.
+
   renderables.forEach((renderable) => {
     renderable.draw();
   });

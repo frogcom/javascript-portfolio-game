@@ -11,11 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/img/dimond.png">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 
 </head>
 
 <body>
+    <script>
+        $(window).on('load', function () {
+            // Animate loader off screen
+            setTimeout(function () {
+                $("#DatForenklaR1_Loader_Container").addClass("DatForenklaR1_Loader_Out");
+                $("body").removeClass("DatForenklaR1_Disable_Scroll");
+                setTimeout(function () {
+                    lottie.pause();
+                }, 2200);
+            }, 2200);
+        }); 
+    </script>
+
     <div class="container" style="display: flex; position: relative; width: 100vw; height: 100vh;">
+        <div id="DatForenklaR1_Loader_Container">
+            <!-- De content van de Loader, hier kan een gifje of een Lottie Animatie geplaatst worden -->
+            <div id="DatForenklaR1_Loader_Content">
+                <div id="loading">
+                    <p>Loading game<b>.</b><b>.</b><b>.</b></p>
+                </div>
+            </div>
+        </div>
         <div id="startgame" class="zichtbaar" onclick="startGame()">
 
             <p>hey goedendag,</p>
@@ -45,6 +67,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
         integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="loader.js"></script> -->
     <script src="assets/js/keys.js"></script>
     <script src="assets/js/functions.js"></script>
     <script src="assets/data/audio.js"></script>
@@ -53,6 +76,7 @@
     <script src="assets/js/utils.js"></script>
     <script src="classes.js"></script>
     <script src="index.js"></script>
+
 </body>
 
 </html>

@@ -55,3 +55,86 @@ button:hover {
 .zichtbaar {
   display: flex;
 }
+
+/* LOADER */
+
+#DatForenklaR1_Loader_Container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+  z-index: 1001;
+  background-color: #000000;
+  color: rgb(1, 11, 9);
+  clip-path: inset(0 0 0% 0);
+  transition: clip-path 1.3s;
+}
+
+.DatForenklaR1_Loader_Out {
+  clip-path: inset(0 0 100% 0) !important;
+}
+
+#DatForenklaR1_Loader_Content {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 600ms;
+}
+
+.DatForenklaR1_Loader_Out #DatForenklaR1_Loader_Content {
+  opacity: 0 !important;
+}
+
+#DatForenklaR1_Loader_Text {
+  margin-top: 24px;
+  display: block;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+}
+#loading p {
+  text-align: center;
+  margin-top: 25%;
+  font-size: 3em;
+  /* font-family: sans-serif; */
+  color: white;
+}
+#loading p b:nth-child(4n + 0) {
+  animation: pulse 400ms infinite 000ms;
+}
+#loading p b:nth-child(4n + 1) {
+  animation: pulse 400ms infinite 100ms;
+}
+#loading p b:nth-child(4n + 2) {
+  animation: pulse 400ms infinite 200ms;
+}
+#loading p b:nth-child(4n + 3) {
+  animation: pulse 400ms infinite 300ms;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}

@@ -63,7 +63,7 @@ function checkForCharacterCollision({
                 document.getElementById("nextdetails").classList.add("hidden");
                 break;
               default:
-                // dialogeID = 1;
+                dialogeID = 1;
                 break;
             }
             console.log(dialogeID);

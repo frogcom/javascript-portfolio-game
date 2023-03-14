@@ -35,20 +35,19 @@ button:hover {
   left: 27.5%;
   width: 30em;
   height: max-content;
+
   font-family: "Press Start 2P";
 }
 #startgame {
-  height: 40vh;
   width: 50vw;
   position: absolute;
   background-color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1em;
 }
-#stargame:hover {
-  background-color: rgb(195, 186, 186);
-}
+
 .hidden {
   display: none;
 }
@@ -69,21 +68,11 @@ button:hover {
   background-color: #000000;
   color: rgb(1, 11, 9);
   clip-path: inset(0 0 0% 0);
-  transition: clip-path 1.3s;
+  transition: clip-path 2s;
 }
 
 .DatForenklaR1_Loader_Out {
   clip-path: inset(0 0 100% 0) !important;
-}
-
-#DatForenklaR1_Loader_Content {
-  width: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  transition: opacity 600ms;
 }
 
 .DatForenklaR1_Loader_Out #DatForenklaR1_Loader_Content {

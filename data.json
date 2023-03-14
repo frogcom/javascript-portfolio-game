@@ -3,12 +3,12 @@
     "eerste": {
       "title": "about me",
       "dialoge": {
-        "1": " ik ben Cas meijer een 2e jaar student webdeveloper. met een intressen in node.js laravel en het gebruiken van linux",
-        "2": "ik heb opschool ervaring gedaan met <ul><li> HTML</li> <li>CSS</li> <li> SASS</li> <li> JavaScript</li> <li> Python</li> <li>PHP</li> <li> sql</li> <li> Node.js </li>\r en frameworks als laravel Django en react ",
+        "1": "Hi there! My name is Cas Meijer, and I'm a programmer who loves to work with JavaScript, Node.js, and Laravel. I'm always on the lookout for new technologies and programming languages to learn, and I enjoy experimenting with different frameworks to build exciting and innovative projects. Whether it's building web applications or creating complex backend systems, I'm always eager to dive into new programming challenges.",
+        "2": "In addition to my love for JavaScript, Node.js, and Laravel, I also have experience with a range of programming languages and frameworks. I'm proficient in HTML, CSS, SCSS, JavaScript, TypeScript, Python, PHP, and SQL, and I've worked extensively with frameworks such as Django and Laravel. I enjoy staying up-to-date with the latest programming trends and techniques, and I'm constantly looking for opportunities to expand my skillset.",
         "3": [
           {
-            "lasttxt": "wil je meer over mijn projecten weten of naar me socials gaan loop gerust hier rond",
-            "github": "github.com",
+            "lasttxt": "for contact or email",
+            "github": "robbertcasmeijer@gmail.com",
             "live": "online.test.nl"
           }
         ]

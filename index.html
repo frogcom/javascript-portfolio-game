@@ -23,18 +23,21 @@
                 $("#DatForenklaR1_Loader_Container").addClass("DatForenklaR1_Loader_Out");
                 $("body").removeClass("DatForenklaR1_Disable_Scroll");
                 setTimeout(function () {
-                    lottie.pause();
+                    // lottie.pause();
                 }, 1500);
             }, 1500);
         }); 
     </script>
 
     <div class="container" style="display: flex; position: relative; width: 100vw; height: 100vh;">
+        <div id="debug" class="debug">
+
+        </div>
         <div id="DatForenklaR1_Loader_Container">
             <!-- De content van de Loader, hier kan een gifje of een Lottie Animatie geplaatst worden -->
             <div id="DatForenklaR1_Loader_Content">
                 <div id="loading">
-                    <p>Loading game<b>.</b><b>.</b><b>.</b></p>
+                    <p>Loading portfolio<b>.</b><b>.</b><b>.</b></p>
                 </div>
             </div>
         </div>
@@ -50,6 +53,7 @@
 
             <p>You walk to the doors to see some of my projects and you can walk with w a s d</p>
             <p> press here to start the game</p>
+
             <img src="assets/img/start.png" alt="start button">
         </div>
         <div id="textdiv" class="hidden">

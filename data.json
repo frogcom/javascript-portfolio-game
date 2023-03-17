@@ -15,9 +15,9 @@
       }
     },
     "tweede": {
-      "title": "dit portolio",
+      "title": "dit portfolio",
       "dialoge": {
-        "1": "dit portolio is gemaakt in plain javascript. dit project begon aan het eind van het eerste schooljaar. \rwe moesten een game maken in javascript en vond dat een leuk project die ik een keer verder wou uitwerken.\r had daar aleen nooit een plan voor. ",
+        "1": "dit portfolio is gemaakt in plain javascript. dit project begon aan het eind van het eerste schooljaar. \rwe moesten een game maken in javascript en vond dat een leuk project die ik een keer verder wou uitwerken.\r had daar aleen nooit een plan voor. ",
         "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
         "3": [
           {
@@ -31,7 +31,7 @@
     "derde": {
       "title": "laravel 3",
       "dialoge": {
-        "1": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+        "1": "meer koekjes binnen --->",
         "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
         "3": [
           {

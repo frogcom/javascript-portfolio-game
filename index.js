@@ -170,7 +170,7 @@ function animate() {
     renderables.forEach((renderable) => {
       renderable.draw();
     });
-
+    console.log(1000 / deltaTime);
     let moving = true;
     player.animate = false;
     const textDiv = document.getElementById("textdiv");

@@ -171,7 +171,7 @@ function animate() {
     renderables.forEach((renderable) => {
       renderable.draw();
     });
-    console.log(1000 / deltaTime);
+    // console.log(1000 / deltaTime);
     let moving = true;
     player.animate = false;
 

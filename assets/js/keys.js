@@ -23,6 +23,18 @@ const keys = {
   D: {
     pressed: false,
   },
+  ArrowLeft: {
+    pressed: false,
+  },
+  ArrowRight: {
+    pressed: false,
+  },
+  ArrowUp: {
+    pressed: false,
+  },
+  ArrowDown: {
+    pressed: false,
+  },
 };
 
 let lastKey = "";
@@ -63,6 +75,22 @@ window.addEventListener("keydown", (e) => {
       keys.D.pressed = true;
       lastKey = "D";
       break;
+    case "ArrowLeft":
+      keys.ArrowLeft.pressed = true;
+      lastKey = "ArrowLeft";
+      break;
+    case "ArrowRight":
+      keys.ArrowRight.pressed = true;
+      lastKey = "ArrowRight";
+      break;
+    case "ArrowUp":
+      keys.ArrowUp.pressed = true;
+      lastKey = "ArrowUp";
+      break;
+    case "ArrowDown":
+      keys.ArrowDown.pressed = true;
+      lastKey = "ArrowDown";
+      break;
   }
 });
 
@@ -91,6 +119,18 @@ window.addEventListener("keyup", (e) => {
       break;
     case "D":
       keys.D.pressed = false;
+      break;
+    case "ArrowLeft":
+      keys.ArrowLeft.pressed = false;
+      break;
+    case "ArrowRight":
+      keys.ArrowRight.pressed = false;
+      break;
+    case "ArrowUp":
+      keys.ArrowUp.pressed = false;
+      break;
+    case "ArrowDown":
+      keys.ArrowDown.pressed = false;
       break;
   }
 });

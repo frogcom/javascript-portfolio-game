@@ -1,51 +1,52 @@
 {
   "projects": {
     "eerste": {
-      "title": "about me",
+      "title": "beste bezoeker",
       "dialoge": {
-        "1": "Hi there! My name is Cas Meijer, and I'm a programmer who loves to work with JavaScript, Node.js, and Laravel. I'm always on the lookout for new technologies and programming languages to learn, and I enjoy experimenting with different frameworks to build exciting and innovative projects. Whether it's building web applications or creating complex backend systems, I'm always eager to dive into new programming challenges.",
-        "2": "In addition to my love for JavaScript, Node.js, and Laravel, I also have experience with a range of programming languages and frameworks. I'm proficient in HTML, CSS, SCSS, JavaScript, TypeScript, Python, PHP, and SQL, and I've worked extensively with frameworks such as Django and Laravel. I enjoy staying up-to-date with the latest programming trends and techniques, and I'm constantly looking for opportunities to expand my skillset.",
+        "1": "Hallo daar, welkom op mijn portfolio ",
+        "2": "Beste bezoeker, Mijn naam is Cas Meijer en ik ben een gepassioneerde webontwikkelaar met uitgebreide ervaring in HTML, CSS, JavaScript, Node.js, Python, PHP, MySQL en diverse frameworks, zoals React, Laravel en Django. Ik heb een passie voor het bouwen van schaalbare, responsieve en esthetisch aantrekkelijke websites en webapplicaties die aan de behoeften van mijn klanten voldoen. Ik ben trots op mijn werk en ik zou graag de gelegenheid willen hebben om enkele van mijn projecten met u te delen.",
+
         "3": [
           {
-            "lasttxt": "for contact or email",
+            "lasttxt": "Ik nodig u graag uit om mijn portfolio te doorloopen en te zien wat ik te bieden heb. Als u meer wilt weten over mijn vaardigheden en ervaring, kunt u ook mijn cv bekijken.",
             "github": "robbertcasmeijer@gmail.com",
-            "live": "online.test.nl"
+            "live": "frogy.dev"
           }
         ]
       }
     },
     "tweede": {
-      "title": "dit portfolio",
+      "title": "laravel",
       "dialoge": {
-        "1": "dit portfolio is gemaakt in plain javascript. dit project begon aan het eind van het eerste schooljaar. \rwe moesten een game maken in javascript en vond dat een leuk project die ik een keer verder wou uitwerken.\r had daar aleen nooit een plan voor. ",
-        "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+        "1": "halverwegen het 2e jaar zijn we aan de slag gegaan met laravel. daar moesten we een blog site maken waar de gebruiker in kan loggen en een blog kan schrijven. dat moesten we met de hele klas doen iedereen maakte een deel en dat voegde we aan het eind alemaal samen. ik ben met mijn groepje aan de slag gegaan met het admin pannel en autentificatie. ",
+        "2": "uit eindelijk hebben we met heel de klas een redelijk resultaat gehaald en heb ik veel geleerd tijdens die module. om niet aleen samen te werken met je eigen groepje maar je code ook zo te schrijven dat het voor andere groeppen makkelijk te begrijpen is.",
         "3": [
           {
-            "lasttxt": "dit is het einde hier de link naar:",
-            "github": "github.com",
-            "live": "online.test.nl"
+            "lasttxt": "dit project staat momenteel niet online maar je kan het wel bekijken op github",
+            "github": "https://github.com/frogcom/laravel-breeze-multi-auth-admin",
+            "live": "#"
           }
         ]
       }
     },
     "derde": {
-      "title": "laravel 3",
+      "title": "discord bot",
       "dialoge": {
-        "1": "meer koekjes binnen --->",
-        "2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+        "1": "een ander project waar ik mee bezig ben geweest is een discord bot. ik heb met 2 andere een glu manager proberen te maken. het plan was om een bot te maken waar mee je tijdens lessen de absentie kan bijhouden op discord projecten kan inleveren via een command. ieder accunt is gekoppelt aan een leerling nummer en klas en zo ook makkelijk op discord je rooster kan zien. ",
+        "2": "de bot is momenteel nog onder constructie want we zijn nog steeds bezig met het uitbereiden er van. maar veel van de functies die we geplan hadden werken al of bijna.",
         "3": [
           {
-            "lasttxt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, maxime.",
+            "lasttxt": "wil je de bot in werking zien join de server of anders kan je de source code op github bekijken",
             "github": "github.com",
-            "live": "online.test.nl"
+            "live": "https://discord.gg/stUe8dAv"
           }
         ]
       }
     },
     "vierde": {
-      "title": "dit word snel geupdate 1",
+      "title": "Aframe",
       "dialoge": {
-        "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "1": "ook aframe is iets waar ik een aantal keer mee gewerkt heb. met aframe kan je door middel van html te schrijven een virtuele wereld maken en ook in rondlopen. ",
         "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
         "3": [
           {

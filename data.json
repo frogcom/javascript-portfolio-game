@@ -8,7 +8,7 @@
 
         "3": [
           {
-            "lasttxt": "Ik nodig u graag uit om mijn portfolio te doorloopen en te zien wat ik te bieden heb. Als u meer wilt weten over mijn vaardigheden en ervaring, kunt u ook mijn cv bekijken.",
+            "lasttxt": "Ik nodig u graag uit om mijn portfolio te doorlopen en te zien wat ik te bieden heb. Als u meer wilt weten over mijn vaardigheden en ervaring, Kunt u ook mijn cv bekijken.",
             "github": "robbertcasmeijer@gmail.com",
             "live": "frogy.dev"
           }
@@ -16,13 +16,13 @@
       }
     },
     "tweede": {
-      "title": "laravel",
+      "title": "Laravel 2",
       "dialoge": {
-        "1": "halverwegen het 2e jaar zijn we aan de slag gegaan met laravel. daar moesten we een blog site maken waar de gebruiker in kan loggen en een blog kan schrijven. dat moesten we met de hele klas doen iedereen maakte een deel en dat voegde we aan het eind alemaal samen. ik ben met mijn groepje aan de slag gegaan met het admin pannel en autentificatie. ",
-        "2": "uit eindelijk hebben we met heel de klas een redelijk resultaat gehaald en heb ik veel geleerd tijdens die module. om niet aleen samen te werken met je eigen groepje maar je code ook zo te schrijven dat het voor andere groeppen makkelijk te begrijpen is.",
+        "1": "Halverwege het 2e jaar zijn we aan de slag gegaan met Laravel.  Ik heb een blog site gemaakt waar de gebruiker kan inloggen en een blog kan schrijven. uiteindelijk hebben we met een groep studenten ons werk gecombineerd.",
+        "2": "het was heel goed om te ervaren om te samen werken met andere studenten. ",
         "3": [
           {
-            "lasttxt": "dit project staat momenteel niet online maar je kan het wel bekijken op github",
+            "lasttxt": "Dit project staat momenteel niet online maar je kan het wel bekijken op github",
             "github": "https://github.com/frogcom/laravel-breeze-multi-auth-admin",
             "live": "#"
           }
@@ -30,13 +30,13 @@
       }
     },
     "derde": {
-      "title": "discord bot",
+      "title": "discord bot 3",
       "dialoge": {
-        "1": "een ander project waar ik mee bezig ben geweest is een discord bot. ik heb met 2 andere een glu manager proberen te maken. het plan was om een bot te maken waar mee je tijdens lessen de absentie kan bijhouden op discord projecten kan inleveren via een command. ieder accunt is gekoppelt aan een leerling nummer en klas en zo ook makkelijk op discord je rooster kan zien. ",
-        "2": "de bot is momenteel nog onder constructie want we zijn nog steeds bezig met het uitbereiden er van. maar veel van de functies die we geplan hadden werken al of bijna.",
+        "1": "een ander project waar ik mee bezig ben geweest is een discord bot. ik heb met 2 klasgenoten een discord bot gemaakt. het plan was om een bot te maken die die de verschillende communicatiesystemen die op school worden gebruikt te combineren.",
+        "2": "de bot is momenteel nog onder constructie want we zijn nog steeds bezig met het uitbereiden er van. maar veel van de functies die we gepland hadden werken al of bijna.",
         "3": [
           {
-            "lasttxt": "wil je de bot in werking zien join de server of anders kan je de source code op github bekijken",
+            "lasttxt": "wil je de bot in werking zien: join de server of anders kan je de source code op github bekijken",
             "github": "github.com",
             "live": "https://discord.gg/stUe8dAv"
           }
@@ -44,13 +44,13 @@
       }
     },
     "vierde": {
-      "title": "Aframe",
+      "title": "Aframe 4",
       "dialoge": {
-        "1": "ook aframe is iets waar ik een aantal keer mee gewerkt heb. met aframe kan je door middel van html te schrijven een virtuele wereld maken en ook in rondlopen. ",
-        "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
+        "1": "ook Aframe is iets waar ik een aantal keer mee gewerkt heb. met Aframe kan je door middel van html te schrijven een virtuele wereld maken en ook in rondlopen. ",
+        "2": "",
         "3": [
           {
-            "lasttxt": "momenteel is hier nog niks te vinden kijk later nog een keer",
+            "lasttxt": "",
             "github": "github.com",
             "live": "online.test.nl"
           }
@@ -58,7 +58,7 @@
       }
     },
     "vijfde": {
-      "title": "laravel2",
+      "title": "5",
       "dialoge": {
         "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
         "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
@@ -72,7 +72,7 @@
       }
     },
     "sixth": {
-      "title": "laravel3",
+      "title": "6",
       "dialoge": {
         "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
         "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
@@ -86,7 +86,7 @@
       }
     },
     "seventh": {
-      "title": "laravel4",
+      "title": "6",
       "dialoge": {
         "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
         "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
@@ -100,9 +100,9 @@
       }
     },
     "acht": {
-      "title": "secret",
+      "title": "7",
       "dialoge": {
-        "1": "SSSSSSST, \r je hebt me geheime project gevonden dat niemand mocht weten. klik snel verder voor meer informatie",
+        "1": "",
         "2": "momenteel is hier nog niks te vinden kijasdfasSE",
         "3": [
           {
@@ -114,7 +114,7 @@
       }
     },
     "negen": {
-      "title": "laravel6",
+      "title": "8",
       "dialoge": {
         "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
         "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
@@ -128,7 +128,7 @@
       }
     },
     "tien": {
-      "title": "laravel7",
+      "title": "9",
       "dialoge": {
         "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
         "2": "momenteel is hier nog niks te vinden kijk later nog een keer",
@@ -142,7 +142,7 @@
       }
     },
     "eleven": {
-      "title": "laravel8 ",
+      "title": "10 ",
       "dialoge": {
         "1": "momenteel is hier nog niks te vinden kijk later nog een keer",
         "2": "momenteel is hier nog niks te vinden kijk later nog een keer",

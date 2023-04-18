@@ -39,7 +39,7 @@ button:hover {
   font-family: "Press Start 2P";
 }
 #startgame {
-  width: 50vw;
+  width: 75vw;
   position: absolute;
   background-color: white;
   flex-direction: column;

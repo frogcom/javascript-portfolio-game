@@ -92,7 +92,7 @@ charactersMap.forEach((row, i) => {
 });
 
 const image = new Image();
-image.src = "./assets/img/Pellet Town.png";
+image.src = "./assets/img/pellettown.png";
 
 const foregroundImage = new Image();
 foregroundImage.src = "./assets/img/foregroundObjects.png";

@@ -1,0 +1,43 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "untitled.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "tiles.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "untitled.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 395.2727272727273,
+                "y": 753.3636363636364
+            }
+        }
+    },
+    "last.imagePath": "/home/frogy/websites/javascript-portfolio-game",
+    "map.height": 80,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 12,
+    "map.tileWidth": 12,
+    "map.width": 120,
+    "openFiles": [
+        "tiles.tsx",
+        "untitled.tmx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "tiles.tsx",
+        "untitled.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 12,
+        "width": 12
+    }
+}

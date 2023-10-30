@@ -32,7 +32,7 @@ villagerImg.src = "./assets/img/villager/idle.png";
 const doorImg = new Image();
 doorImg.src = "./assets/img/test.png";
 const oldManImg = new Image();
-oldManImg.src = "./assets/img/oldMan/Idle.png";
+oldManImg.src = "./assets/img/oldMan/Idassetsle.png";
 
 collisionsMap.forEach((row, i) => {
   row.forEach((symbol, j) => {

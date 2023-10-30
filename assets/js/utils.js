@@ -46,292 +46,332 @@ function checkForCharacterCollision({
       switch (character.uid) {
         case 1:
           ContentTitle = jsonData.projects.eerste.title;
-          Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge =
-                  jsonData.projects.eerste.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 2:
-          ContentTitle = jsonData.projects.tweede.title;
-          Dialoge = jsonData.projects.tweede.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.tweede.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge =
-                  jsonData.projects.tweede.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 3:
-          ContentTitle = jsonData.projects.derde.title;
-          Dialoge = jsonData.projects.derde.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.derde.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge = jsonData.projects.derde.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 4:
-          ContentTitle = jsonData.projects.vierde.title;
-          Dialoge = jsonData.projects.vierde.dialoge[dialogeID];
+
           next.addEventListener("click", function () {
             ++dialogeID;
 
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.vierde.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge =
-                  jsonData.projects.vierde.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
+            if (dialogeID == 1) {
+              Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
             }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 5:
-          ContentTitle = jsonData.projects.vijfde.title;
-          Dialoge = jsonData.projects.vijfde.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
+            if (dialogeID == 2) {
+              Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
+            }
+            if (dialogeID == 3) {
+              Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
+              addDialog(Dialoge);
+              //++dialogeID;
+              document.getElementById("nextdetails").classList.add("hidden");
+            }
 
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.vijfde.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge =
-                  jsonData.projects.vijfde.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
+            // switch (dialogeID) {
+            //   case 2:
+            //     Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
+            //     addDialog(Dialoge);
+            //     // ++dialogeID;
+            //     break;
+            //   case 3:
+            //     Dialoge =
+            //       jsonData.projects.eerste.dialoge[dialogeID][0].lasttxt;
+            //     addDialog(Dialoge);
+            //     //++dialogeID;
+            //     document.getElementById("nextdetails").classList.add("hidden");
+            //     break;
+            //   default:
+            //     dialogeID = 1;
+            //     break;
+            // }
             console.log(dialogeID);
             return false;
           });
           break;
-        case 6:
-          ContentTitle = jsonData.projects.sixth.title;
-          Dialoge = jsonData.projects.sixth.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.sixth.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge = jsonData.projects.sixth.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 7:
-          ContentTitle = jsonData.projects.seventh.title;
-          Dialoge = jsonData.projects.seventh.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
+        // case 1:
+        //   ContentTitle = jsonData.projects.eerste.title;
+        //   Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.eerste.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge =
+        //           jsonData.projects.eerste.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 2:
+        //   ContentTitle = jsonData.projects.tweede.title;
+        //   Dialoge = jsonData.projects.tweede.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.tweede.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge =
+        //           jsonData.projects.tweede.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 3:
+        //   ContentTitle = jsonData.projects.derde.title;
+        //   Dialoge = jsonData.projects.derde.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.derde.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge = jsonData.projects.derde.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 4:
+        //   ContentTitle = jsonData.projects.vierde.title;
+        //   Dialoge = jsonData.projects.vierde.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
 
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.seventh.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge =
-                  jsonData.projects.seventh.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 8:
-          ContentTitle = jsonData.projects.acht.title;
-          Dialoge = jsonData.projects.acht.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.vierde.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge =
+        //           jsonData.projects.vierde.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 5:
+        //   ContentTitle = jsonData.projects.vijfde.title;
+        //   Dialoge = jsonData.projects.vijfde.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
 
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.acht.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge = jsonData.projects.acht.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 9:
-          ContentTitle = jsonData.projects.negen.title;
-          Dialoge = jsonData.projects.negen.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.vijfde.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge =
+        //           jsonData.projects.vijfde.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 6:
+        //   ContentTitle = jsonData.projects.sixth.title;
+        //   Dialoge = jsonData.projects.sixth.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.sixth.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge = jsonData.projects.sixth.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 7:
+        //   ContentTitle = jsonData.projects.seventh.title;
+        //   Dialoge = jsonData.projects.seventh.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
 
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.negen.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge = jsonData.projects.negen.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 10:
-          ContentTitle = jsonData.projects.tien.title;
-          Dialoge = jsonData.projects.tien.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.seventh.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge =
+        //           jsonData.projects.seventh.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 8:
+        //   ContentTitle = jsonData.projects.acht.title;
+        //   Dialoge = jsonData.projects.acht.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
 
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.tien.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge = jsonData.projects.tien.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
-        case 11:
-          ContentTitle = jsonData.projects.eleven.title;
-          Dialoge = jsonData.projects.eleven.dialoge[dialogeID];
-          next.addEventListener("click", function () {
-            ++dialogeID;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.acht.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge = jsonData.projects.acht.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 9:
+        //   ContentTitle = jsonData.projects.negen.title;
+        //   Dialoge = jsonData.projects.negen.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
 
-            switch (dialogeID) {
-              case 2:
-                Dialoge = jsonData.projects.eleven.dialoge[dialogeID];
-                addDialog(Dialoge);
-                // ++dialogeID;
-                break;
-              case 3:
-                Dialoge =
-                  jsonData.projects.eleven.dialoge[dialogeID][0].lasttxt;
-                addDialog(Dialoge);
-                //++dialogeID;
-                document.getElementById("nextdetails").classList.add("hidden");
-                break;
-              default:
-                dialogeID = 1;
-                break;
-            }
-            console.log(dialogeID);
-            return false;
-          });
-          break;
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.negen.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge = jsonData.projects.negen.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 10:
+        //   ContentTitle = jsonData.projects.tien.title;
+        //   Dialoge = jsonData.projects.tien.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
+
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.tien.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge = jsonData.projects.tien.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        //   break;
+        // case 11:
+        //   ContentTitle = jsonData.projects.eleven.title;
+        //   Dialoge = jsonData.projects.eleven.dialoge[dialogeID];
+        //   next.addEventListener("click", function () {
+        //     ++dialogeID;
+
+        //     switch (dialogeID) {
+        //       case 2:
+        //         Dialoge = jsonData.projects.eleven.dialoge[dialogeID];
+        //         addDialog(Dialoge);
+        //         // ++dialogeID;
+        //         break;
+        //       case 3:
+        //         Dialoge =
+        //           jsonData.projects.eleven.dialoge[dialogeID][0].lasttxt;
+        //         addDialog(Dialoge);
+        //         //++dialogeID;
+        //         document.getElementById("nextdetails").classList.add("hidden");
+        //         break;
+        //       default:
+        //         dialogeID = 1;
+        //         break;
+        //     }
+        //     console.log(dialogeID);
+        //     return false;
+        //   });
+        // break;
         default:
           ContentTitle = "";
           Dialoge = "";
